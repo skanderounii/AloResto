@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aloresto.gui.AjouterPlaFXMLController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+               <children>
+                  <Button layoutX="475.0" layoutY="36.0" mnemonicParsing="false" onAction="#AccueilC" prefHeight="61.0" prefWidth="83.0" text="Accueil" />
+                  <Button layoutX="401.0" layoutY="301.0" mnemonicParsing="false" onAction="#EnregistrerC" text="Enregistrer" />
+                  <Button layoutX="246.0" layoutY="301.0" mnemonicParsing="false" onAction="#AfficherC" text="Afficher" />
+                  <Button layoutX="71.0" layoutY="301.0" mnemonicParsing="false" onAction="#ResetC" text="Reset" />
+                  <TextField fx:id="nomPla" layoutX="200.0" layoutY="72.0" promptText="nom" />
+                  <TextField fx:id="desPla" layoutX="200.0" layoutY="127.0" promptText="description" />
+                  <TextField fx:id="prixPla" layoutX="200.0" layoutY="176.0" promptText="prix" />
+                  <TextField fx:id="tempsPla" layoutX="200.0" layoutY="229.0" promptText="temps preparation" />
+                  <Label layoutX="56.0" layoutY="76.0" text="Nom Plat:" textFill="#278a5f" />
+                  <Label layoutX="58.0" layoutY="131.0" text="Description:" textFill="#278a5f" />
+                  <Label layoutX="60.0" layoutY="180.0" text="Prix:" textFill="#278a5f" />
+                  <Label layoutX="56.0" layoutY="233.0" text="Temps préparation: " textFill="#278a5f" />
+                  <TextField fx:id="nomC1" layoutX="200.0" layoutY="24.0" promptText="ID" />
+                  <Label layoutX="56.0" layoutY="28.0" text="ID:" textFill="#278a5f" />
+                  <Button layoutX="134.0" layoutY="338.0" mnemonicParsing="false" onAction="#mod" text="Modifier" />
+                  <Button layoutX="312.0" layoutY="338.0" mnemonicParsing="false" onAction="#sup" text="Supprimer" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

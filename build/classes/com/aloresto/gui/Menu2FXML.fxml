@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="com.aloresto.gui.Menu2FXMLController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="716.0">
+         <children>
+            <ImageView fitHeight="450.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/alpha2.jpg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="7.0" layoutY="41.0" prefHeight="467.0" prefWidth="318.0">
+               <children>
+                  <Button layoutX="8.0" layoutY="-17.0" mnemonicParsing="false" onAction="#reclamationM" prefHeight="35.0" prefWidth="106.0" text="Reclamation" textFill="#2a9768" />
+                  <Button layoutX="8.0" layoutY="34.0" mnemonicParsing="false" onAction="#etatM" prefHeight="35.0" prefWidth="106.0" text="Etat" textFill="#2a9768" />
+                  <Button layoutX="7.0" layoutY="89.0" mnemonicParsing="false" onAction="#livraisonM" prefHeight="35.0" prefWidth="106.0" text="Livraison" textFill="#2a9768" />
+                  <Button layoutX="8.0" layoutY="148.0" mnemonicParsing="false" onAction="#RouteM" prefHeight="35.0" prefWidth="106.0" text="Route" textFill="#2a9768" />
+                  <Button layoutX="92.0" layoutY="199.0" mnemonicParsing="false" onAction="#administrateurM" prefHeight="35.0" prefWidth="106.0" text="Administrateur" textFill="#2a9768" />
+                  <Button layoutX="236.0" layoutY="199.0" mnemonicParsing="false" onAction="#ClientM" prefHeight="35.0" prefWidth="106.0" text="Client" textFill="#2a9768" />
+                  <Button layoutX="42.0" layoutY="260.0" mnemonicParsing="false" onAction="#ChefM" prefHeight="35.0" prefWidth="106.0" text="Chef" textFill="#2a9768" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="panechage" layoutX="292.0" layoutY="36.0" onDragDetected="#REC" prefHeight="386.0" prefWidth="459.0">
+               <children>
+                  <TableView fx:id="aff" layoutX="157.0" layoutY="-36.0" prefHeight="450.0" prefWidth="304.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+                  <Button layoutX="36.0" layoutY="-17.0" mnemonicParsing="false" onAction="#platM" prefHeight="35.0" prefWidth="106.0" text="Plat" textFill="#2a9768" />
+                  <Button layoutX="36.0" layoutY="38.0" mnemonicParsing="false" onAction="#categoriesM" prefHeight="35.0" prefWidth="106.0" text="Categories" textFill="#2a9768" />
+                  <Button layoutX="36.0" layoutY="95.0" mnemonicParsing="false" onAction="#commandeM" prefHeight="35.0" prefWidth="106.0" text="Commande" textFill="#2a9768" />
+                  <Button layoutX="36.0" layoutY="154.0" mnemonicParsing="false" onAction="#ligneCommandeM" prefHeight="35.0" prefWidth="106.0" text="LigneCommande" textFill="#2a9768" />
+                  <Button layoutX="-10.0" layoutY="263.0" mnemonicParsing="false" onAction="#livreurM" prefHeight="35.0" prefWidth="106.0" text="Livreur" textFill="#2a9768" />
+                  <Button layoutX="104.0" layoutY="359.0" mnemonicParsing="false" onAction="#quitterM" prefHeight="11.0" prefWidth="29.0" text="Q" textFill="#2a9768" />
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets top="-60.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</AnchorPane>

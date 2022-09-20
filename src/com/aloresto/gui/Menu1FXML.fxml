@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aloresto.gui.Menu1FXMLController">
+   <children>
+      <ImageView fx:id="im" fitHeight="605.0" fitWidth="654.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Alpha.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="164.0" layoutY="404.0" mnemonicParsing="false" onAction="#reclamationM" prefHeight="55.0" prefWidth="108.0" text="Reclamation" />
+      <Button layoutX="335.0" layoutY="404.0" mnemonicParsing="false" onAction="#commandeM" prefHeight="55.0" prefWidth="108.0" text="Commande" />
+      <Button layoutX="164.0" layoutY="506.0" mnemonicParsing="false" onAction="#etatM" prefHeight="55.0" prefWidth="108.0" text="Etat" />
+      <Button layoutX="335.0" layoutY="506.0" mnemonicParsing="false" onAction="#ligneCommandeM" prefHeight="55.0" prefWidth="108.0" text="Ligne Commande" />
+      <Button layoutX="20.0" layoutY="404.0" mnemonicParsing="false" onAction="#livraisonM" prefHeight="55.0" prefWidth="108.0" text="Livraison" />
+      <Button layoutX="20.0" layoutY="506.0" mnemonicParsing="false" onAction="#routeM" prefHeight="55.0" prefWidth="108.0" text="Route" />
+      <Button layoutX="472.0" layoutY="404.0" mnemonicParsing="false" onAction="#platM" prefHeight="55.0" prefWidth="108.0" text="Plat" />
+      <Button layoutX="472.0" layoutY="506.0" mnemonicParsing="false" onAction="#categoriesM" prefHeight="55.0" prefWidth="108.0" text="Categories" />
+      <Button layoutX="249.0" layoutY="77.0" mnemonicParsing="false" onAction="#userM" prefHeight="55.0" prefWidth="108.0" text="User" />
+      <Button layoutX="44.0" layoutY="31.0" mnemonicParsing="false" onAction="#administrateurM" prefHeight="55.0" prefWidth="108.0" text="Administrateur" />
+      <Button layoutX="44.0" layoutY="150.0" mnemonicParsing="false" onAction="#livreurM" prefHeight="55.0" prefWidth="108.0" text="Livreur" />
+      <Button layoutX="463.0" layoutY="31.0" mnemonicParsing="false" onAction="#ClientM" prefHeight="55.0" prefWidth="108.0" text="Client" />
+      <Button layoutX="463.0" layoutY="140.0" mnemonicParsing="false" onAction="#ChefM" prefHeight="55.0" prefWidth="108.0" text="Chef" />
+      <Button layoutX="543.0" layoutY="312.0" mnemonicParsing="false" onAction="#quitterM" prefHeight="37.0" prefWidth="37.0" text="Q" />
+   </children>
+</AnchorPane>
